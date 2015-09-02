@@ -218,7 +218,11 @@ a.link_button_green_large {
 /* Header */
 
 #banner_inner {
-  background-color: $color_primary;
+  background-color: $color_white;
+}
+#banner_content{
+  background-color: $color_white;
+  font-color: $color_primary;
 }
 
 #topnav {
