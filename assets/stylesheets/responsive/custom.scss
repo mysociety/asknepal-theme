@@ -220,6 +220,10 @@ a.link_button_green_large {
 #banner_inner {
   background-color: $color_primary;
 }
+#banner_content{
+  background-color: #fff;
+  font-color:#e00015;
+}
 
 #topnav {
   background-color: darken($color_primary, 10%);
