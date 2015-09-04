@@ -835,11 +835,11 @@ dt {
   }
 
   a {
-    color: $color_secondary;
+    color: $color_white;
     &:hover,
     &:active,
     &:focus {
-      color: $color_white;
+      color: $color_secondary;
     }
   }
 
