@@ -503,6 +503,7 @@ a.link_button_green_large {
 
   /* Hide the greeting on smaller devices */
   .greeting {
+    color: $color_neutral_dark;
     display: none;
   }
 
@@ -539,6 +540,13 @@ a.link_button_green_large {
       img {
         height: 30px;
       }
+    }
+  }
+
+  #logged_in_links {
+    color: $color_neutral_dark;
+    a {
+      color: $color_primary;
     }
   }
 
