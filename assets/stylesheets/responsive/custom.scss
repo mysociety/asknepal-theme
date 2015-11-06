@@ -218,7 +218,11 @@ a.link_button_green_large {
 /* Header */
 
 #banner_inner {
-  background-color: $color_primary;
+  background-color: $color_white;
+}
+#banner_content{
+  background-color: $color_white;
+  font-color: $color_primary;
 }
 #banner_content{
   background-color: #fff;
@@ -333,9 +337,8 @@ a.link_button_green_large {
 
 /* LANGUAGE SWITCHER */
 #user_locale_switcher {
-  background-color: $color_primary;
+  background-color: $color_white;
   @include respond-min($main_menu-mobile_menu_cutoff) {
-    background-color: transparent;
     right: auto;
     top: 1.5em;
   }
@@ -351,11 +354,11 @@ a.link_button_green_large {
   }
   .locale-list-trigger {
     margin-bottom: 0;
-    color: $color_white;
-    color: transparentize($color_white, 0.8);
+    color: $color_neutral_dark;
+    color: transparentize($color_neutral_dark, 0.8);
     @include respond-min($main_menu-mobile_menu_cutoff) {
       margin-top: 0;
-      border: 1px solid desaturate(lighten($color_primary, 5%), 5%);
+      border: 1px solid desaturate(lighten($color_white, 5%), 5%);
       border-radius: 3px;
       color: $link-color;
       padding: 0;
@@ -367,7 +370,7 @@ a.link_button_green_large {
   position: relative;
   z-index: 999;
   border-radius: 3px;
-  color: $color_white;
+  color: $color_neutral_dark;
   @include respond-min($main_menu-mobile_menu_cutoff) {
     padding: 0.66em 2em 0.66em 0.66em;
   }
@@ -386,7 +389,7 @@ a.link_button_green_large {
   @include ie8 {
     border-top: 5px solid $color_white;
   }
-  border-top: 5px solid transparentize($color_white, 0.6);
+  border-top: 5px solid transparentize($color_neutral_dark, 0.6);
 }
 
 .locale-list-trigger .current-locale,
@@ -492,6 +495,7 @@ a.link_button_green_large {
 
 
 .locale-list.active .locale-list-trigger {
+  background-color: $color_neutral_dark;
   border-color: transparent;
   @include respond-min($main_menu-mobile_menu_cutoff) {
     border-color: $color_neutral_dark;
@@ -503,6 +507,7 @@ a.link_button_green_large {
 
   /* Hide the greeting on smaller devices */
   .greeting {
+    color: $color_neutral_dark;
     display: none;
   }
 
@@ -539,6 +544,13 @@ a.link_button_green_large {
       img {
         height: 30px;
       }
+    }
+  }
+
+  #logged_in_links {
+    color: $color_neutral_dark;
+    a {
+      color: $color_primary;
     }
   }
 
@@ -827,11 +839,11 @@ dt {
   }
 
   a {
-    color: $color_secondary;
+    color: $color_white;
     &:hover,
     &:active,
     &:focus {
-      color: $color_white;
+      color: $color_secondary;
     }
   }
 
