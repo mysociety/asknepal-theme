@@ -1031,3 +1031,71 @@ $dark-grey: #A9A9A9;
     }
   }
 }
+
+
+
+
+/*Frontpage Hero Section*/
+$bg-blue-trans: rgba(5, 134, 183, 0.5);
+
+.homepage-hero {
+  padding: 0;
+
+  .container-fluid {
+    .row {
+      max-width: 100% !important;
+
+      .hero {
+        width: 60% !important;
+        padding: 0 15px;
+        margin-top: 2em;
+
+        .row {
+          margin: 0 auto;
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        .hero {
+          width: 100% !important;
+          float: left !important;
+        }
+      }
+
+      .requests {
+        width: 35% !important;
+        padding: 0 15px;
+        background-color: $bg-blue-trans;
+
+        .row {
+          margin: 0 auto;
+
+          .latest-requests {
+            padding-left: 20px;
+          }
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        .requests {
+          width: 100% !important;
+          float: left !important;
+          margin-top: 20px !important;
+        }
+      }
+    }
+  }
+}
+
+/*Frontpage How It Works*/
+.homepage-how-it-works__hiw-content {
+  background-color:#ffffff;
+  box-shadow: 1px 1px 1px #A9A9A9;
+  padding: 0 20px 20px 20px;
+
+  .hiw-content__steps {
+    ol {
+      padding: 0;
+    }
+  }
+}
