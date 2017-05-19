@@ -1042,12 +1042,46 @@ $dark-grey: #A9A9A9;
 #footer {
   background-color: $primary-blue !important;
 
-  h5 {
-    font-size: 1.64rem;
+  .container {
+    padding: 0 15px;
+
+    .row {
+      margin: 0;
+      max-width: 100%;
+
+      @media screen and (max-width: 639px) {
+        .supports {
+          float: left !important;
+        }
+      }
+    }
+
+    h5 {
+      font-size: 1.64rem;
+    }
+
+    li.li-inline-block {
+      margin-right: 5px;
+    }
   }
 
-  li.li-inline-block {
-    margin-right: 5px;
+  .footer-copyright {
+    background-color: $secondary-blue-2;
+    padding: 0 15px;
+
+    .row {
+      margin: 0;
+      padding: 5px 0;
+      max-width: 100%;
+
+      @media screen and (max-width: 747px) {
+        .more-contributor {
+          float: left !important;
+          padding-top: 20px;
+          text-align: center;
+        }
+      }
+    }
   }
 
   a:hover {
@@ -1058,14 +1092,6 @@ $dark-grey: #A9A9A9;
   .text-lighten-4 {
     a:hover {
       color: $light-grey;
-    }
-  }
-
-  .footer-copyright {
-    background-color: $secondary-blue-2;
-
-    .row {
-      padding: 5px 0;
     }
   }
 }
