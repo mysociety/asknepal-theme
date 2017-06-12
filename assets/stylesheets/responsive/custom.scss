@@ -882,3 +882,66 @@ dt {
     color: $color_white;
   }
 }
+
+
+/*Help page sidebar*/
+
+$primary-font: 'Source Sans Pro', sans-serif;
+$primary-red: #ad0010;
+$secondary-red: #94000e;
+$primary-blue: #0586b7;
+$secondary-blue: #006389;
+$light-grey: #d3d3d3;
+$dark-grey: #A9A9A9;
+$dark-grey2: #c8c2b1;
+
+.no-mg-tp {
+  margin-top: 0;
+}
+
+.mg-tp-20 {
+  margin-top: 20px;
+}
+
+.mg-bt-10 {
+  margin-bottom: 10px;
+}
+
+
+#right_column_flip {
+  h2 {
+    color: $dark-grey;
+    font-size: 2.2em;
+    font-weight: 600;
+    margin-top: 25px;
+  }
+}
+
+#left_column_flip {
+  h1 {
+    font-size: 3em;
+    font-weight: 600;
+    color: #000000;
+    margin-top: 10px;
+  }
+
+  dl {
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 1px $dark-grey;
+
+    dt {
+      font-size: 2em;
+      font-weight: 600;
+      color: $dark-grey;
+    }
+
+    dd {
+      margin-left: 40px;
+      p {
+        font-size: 17px;
+        text-align: justify;
+      }
+    }
+  }
+}
