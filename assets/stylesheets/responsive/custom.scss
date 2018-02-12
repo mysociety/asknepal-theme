@@ -71,6 +71,22 @@ $action-color: $color_orange;
   }
 }
 
+/* logo height and width */
+
+.site-title__logo {
+  overflow: hidden;
+  text-indent: 150%;
+  white-space: nowrap;
+  width: 160px;
+  height: 70px;
+  background-size: 170px;
+  background-image: url(/assets/logo-b572beffbe63f14c69a51800625c80131e2e644650587ca9578b10281a04f74a.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  display: block;
+  margin-top: -10px;
+}
+
 /* General styles */
 body{
   background-color: $body-bg;
@@ -254,7 +270,7 @@ a.link_button_green_large {
 }
 
 #topnav {
-  background-color: darken($color_primary, 10%);
+  background-color: $color_red;
 }
 
 #navigation{
@@ -890,8 +906,8 @@ dt {
 }
 
 .homepage-hero {
-  background-color: $color_neutral_dark;
-  background-image: image-url('homepage-background-small.jpg');
+  
+  background-color: #006389;;
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -900,8 +916,8 @@ dt {
   position: relative;
   @include respond-min($main_menu-mobile_menu_cutoff) {
     padding: 5em 0 8em;
-    background-image: image-url('homepage-background.jpg');
   }
+
 
   a {
     color: $color_white;
@@ -948,11 +964,15 @@ dt {
   }
 }
 
+#wrapper{
+  padding: 40px 0;
+}
+
 
 /*Help page sidebar*/
 
 $primary-font: 'Source Sans Pro', sans-serif;
-$primary-red: #ad0010;
+$primary-red: $color_red;
 $secondary-red: #94000e;
 $primary-blue: #0586b7;
 $secondary-blue: #006389;
@@ -1016,7 +1036,7 @@ $dark-grey2: #c8c2b1;
 
 /*Custom footer section*/
 $secondary-blue-2: #0980ad;
-$primary-red: #ad0010;
+$primary-red: $color_red;
 $secondary-red: #94000e;
 $primary-blue: #0586b7;
 $secondary-blue: #006389;
@@ -1040,15 +1060,12 @@ $dark-grey: #A9A9A9;
 }
 
 #footer {
-  background-color: $primary-blue !important;
+  background-color: $color_black;
 
   .container {
     padding: 0 15px;
 
     .row {
-      margin: 0;
-      max-width: 100%;
-
       @media screen and (max-width: 639px) {
         .supports {
           float: left !important;
@@ -1066,14 +1083,12 @@ $dark-grey: #A9A9A9;
   }
 
   .footer-copyright {
-    background-color: $secondary-blue-2;
+    background-color: $color_black;
     padding: 0 15px;
 
     .row {
-      margin: 0;
-      padding: 5px 0;
-      max-width: 100%;
-
+    padding: 15px 0;
+    border-top: 1px solid;
       @media screen and (max-width: 747px) {
         .more-contributor {
           float: left !important;
@@ -1103,11 +1118,9 @@ $dark-grey: #A9A9A9;
 $bg-blue-trans: rgba(5, 134, 183, 0.5);
 
 .homepage-hero {
-  padding: 0;
-
+  padding: 5em 0 8em;
   .container-fluid {
     .row {
-      max-width: 100% !important;
 
       .hero {
         width: 60% !important;
