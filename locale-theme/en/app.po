@@ -3,5 +3,5 @@
 # "translations" of the core English words (e.g. you might want to
 # call FOI "RTI" throughougout, like this:
 #
-# msgid "Make and browse Freedom of Information (FOI) requests in Nepal"
-# msgstr "Make and browse Right to Know (RTI) requests in Nepal"
+# msgid "Make and browse Freedom of Information (FOI) requests"
+# msgstr "Make and browse Right to Know (RTI) requests"

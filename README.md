@@ -1,11 +1,4 @@
-About AskNepal
-===============
-AskNepal Initiative is an open platform which can be used by everyone to ask data and information with Nepal government directly, which will increase citizen's reach of Access to Information through the use of technology and encourage citizens engagement in government decision making.
-
-For Local Development
-===============
-
-Alaveteli Theme
+Alavetelitheme
 ==============
 
 This is a "hello world" type theme package for Alaveteli.
